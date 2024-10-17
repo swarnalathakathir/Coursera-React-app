@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+.color {
+  color: #F4CE14; /*primary-yellow*/
+  color: #EE9972;
+  color: #FBDABB;
+  color: #EDEFEE;
+  color: #333333;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App { 
+  font-family: 'Markazi Text', serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button , input[type="submit"]{
+  background-color: #F4CE14;
+  border-radius: 10px;
+  border: 0;
+  color: #000000;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight:600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+header a {
+ display: flex;
+} 
+header section {
+  display:  flex;
+  padding: 1rem 0 1rem 0;
+}
+header nav {
+  margin-left: auto;
+}
+header section  ul {
+  display:  flex;
+  list-style: none;
+}
+header section nav ul li  {
+  padding: 0 1rem;
+  font-weight: 500;
+}
+header section nav ul li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+}
+.heroSection {
+  background-color: #495E57;
+  padding: 1rem 0;
+}
+.heroSection article {
+  display: flex;
+  position: relative;
+}
+.heroSection article .contentSection {
+  width: 270px;
+}
+.heroSection h1 {
+  color: #F4CE14;
+  font-size: 3rem;
+}
+.heroSection h2, h1 {
+  font-weight: normal;
+  margin: 0;
+}
+.heroSection h2 {
+  color: #EDEFEE;
+  font-size: 2rem;
+}
+.heroSection p {
+  color: #EDEFEE;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+.heroSection article .imgSection img{
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  border-radius: 20px;
+  right: 0;
+}
+.highLightSection {
+  margin-top: 7rem;
+}
+.highLightSection h1 {
+  display: inline;
+  font-size: 2.15rem;
+  font-weight: 600;
+}
+.highLightSection button {
+  float: right;
+  padding: 0.75rem 1.5rem;
+}
+.highLightSection section {  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.highLightSection .card {
+  background-color: #EDEFEE;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   display: flex;
   flex-direction: column;
+}
+.highLightSection .card-header {
+  
+}
+.highLightSection .card-header img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.highLightSection .card-body {
+  padding: 1rem 1.25rem;
+}
+.highLightSection .card-body h4 {
+  display: inline;
+  color: #000000;
+}
+.highLightSection .card-body span {
+  float: right;
+  color: #EE9972;
+}
+.highLightSection .card-body p {
+  color: #495E57;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+.highLightSection .card-footer {
+  padding: 1.25rem;
+  margin-top: auto;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.highLightSection .card-footer span {
+  font-size: 14px;
+  font-weight: 500; 
+  margin-right: 0.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.highLightSection .card-footer img {
+  width: 20px;
+}
+.bookingPage h1 {
+  text-align: center;
+  display: block;
+  border-top: 1px solid #EE9972;
+  padding: 4rem 0;
+}
+.bookingForm {
+  padding: 0;
+  display: flex;  
+}
+.bookingForm form {
+  width: 50%;
+}
+.bookingForm img {
+  width: 40%;
+  align-self: center;
+  margin: 0 auto;
+}
+.bookingForm form fieldset {
+  padding: 2rem;
+  border-radius: 5px;
+  border-color: #495E57;
+}
+.bookingForm form label {
+  display: block;
+  font-size: 20px;
+}
+.bookingForm form input, select {
+  display: block;
+  width: 100%;  
+  padding: 0.65rem;
+  min-height: 40px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.bookingForm form input {
+  min-height: 40px;
+  padding: 0 0.5rem;
+}
+.bookingForm form input::placeholder, select::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #495E57;
+}
+.confirmationPage {
+  border-top: 1px solid #EE9972;
+  text-align: center;
+  padding: 7rem 0 4rem 0;
+}
+footer {
+  margin-top: 5rem;
+  border-top: 1px solid #EE9972;
+  padding: 1.5rem 0 0 0;
+}
+footer section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+footer section h3 {
+  margin: 0.5rem 0 0 0;
+}
+footer section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer section ul li {
+  padding: 0.25rem 0 0 0;
 }
